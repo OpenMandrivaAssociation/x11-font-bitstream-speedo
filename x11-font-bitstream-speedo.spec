@@ -1,6 +1,6 @@
 Name: x11-font-bitstream-speedo
-Version: 1.0.0
-Release: %mkrel 6
+Version: 1.0.1
+Release: %mkrel 1
 Summary: Xorg X11 font bitstream-speedo
 Group: Development/X11
 URL: http://xorg.freedesktop.org
@@ -23,8 +23,8 @@ Xorg X11 font bitstream-speedo
 %setup -q -n font-bitstream-speedo-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir} --with-fontdir=%_datadir/fonts/Speedo
+./configure --prefix=/usr --x-includes=%{_includedir}\
+	    --x-libraries=%{_libdir} --with-fontdir=%_datadir/fonts/Speedo
 
 %make
 
