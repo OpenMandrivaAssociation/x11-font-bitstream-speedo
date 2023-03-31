@@ -1,6 +1,6 @@
 Name: x11-font-bitstream-speedo
 Version: 1.0.2
-Release: 17
+Release: 18
 Summary: Xorg X11 font bitstream-speedo
 Group: Development/X11
 URL: https://xorg.freedesktop.org
